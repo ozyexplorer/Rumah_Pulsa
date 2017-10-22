@@ -1,1 +1,4 @@
-adadfadwawdasdawdadawd
+<?php  
+	echo "apalah daya";
+	
+?>
