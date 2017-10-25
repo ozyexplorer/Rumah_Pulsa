@@ -11,8 +11,21 @@
 
 ?>
 
-	<?php  
-		require_once 'public/cek_saldo/ceksaldo.php';
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<?php
+		include 'public/cek_saldo/ceksaldo.php';
+
+		echo 'saldo anda : Rp. '.$data;
 		echo "<br>"; 
 		require_once 'public/daftar_harga/daftar_harga.php';
+
+			
 	?>
+</body>
+</html>
+	

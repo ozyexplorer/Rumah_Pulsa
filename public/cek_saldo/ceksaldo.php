@@ -22,7 +22,6 @@ curl_close($ch);
 $a = json_decode($output);
 
 $data = $a->saldo;
-echo 'saldo anda : Rp. '.$data;
 
 	
 
