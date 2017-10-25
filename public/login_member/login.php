@@ -19,10 +19,10 @@
 <!-- Pen Title-->
 <div class="pen-title">
   <h1>
-     <span>Transaksi</span>RUMAH PULSA</h1><span> <i class='fa fa-paint-brush'></i> + <i class='fa fa-code'></i> by <a href='http://andytran.me'>Barrur Rhozi</a></span>
+     <span>Transaksi</span>RUMAH PULSA</h1><span> <i class='fa fa-paint-brush'></i> + <i class='fa fa-code'></i> by <a href='#'>Barrur Rhozi</a></span>
 </div>
-<!-- Portfolio--><a id="portfolio" href="http://andytran.me/" title="View my portfolio!"><i class="fa fa-link"></i></a>
-<!-- CodePen--><a id="codepen" href="https://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>
+<!-- Portfolio--><a id="portfolio" href="#" title="View my portfolio!"><i class="fa fa-link"></i></a>
+<!-- CodePen--><a id="codepen" href="#" title="Follow me!"><i class="fa fa-codepen"></i></a>
 <!-- Container-->
 <div class="container">
   <!-- Column-->
@@ -52,42 +52,22 @@
       <div class="form style-#{style}" style="width: #{width}">
         <header class="header">
           <h1 class="active">LOGIN</h1>
-          <h1>Sign Up</h1>
         </header>
-        <form class="active">
+        <form class="active" action="masuk.php" method="post">
           <div class="form-group">
-            <input type="text" id="username" placeholder="Username" required="required"/>
+            <input type="text" id="user_member" name="user_member" placeholder="Username" required="required"/>
             <label for="username">Username</label>
             <div class="line"></div>
           </div>
           <div class="form-group">
-            <input type="password" id="password" placeholder="Password" required="required"/>
+            <input type="password" id="password_member" name="password_member" placeholder="Password" required="required"/>
             <label for="password">Password</label>
             <div class="line"></div>
           </div>
-          <button class="button">Login</button>
-        </form>
-        <form>
-          <div class="form-group">
-            <input type="text" id="username" placeholder="Username" required="required"/>
-            <label for="username">Username</label>
-            <div class="line"></div>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Email Address" required="required"/>
-            <label for="email">Email Address</label>
-            <div class="line"></div>
-          </div>
-          <div class="form-group">
-            <input type="password" id="password" placeholder="Password" required="required"/>
-            <label for="password">Password</label>
-            <div class="line"></div>
-          </div>
-          <button class="button">Login</button>
+          <button class="button" name="login">Login</button>
         </form>
         <footer class="footer"><a href="#">Forgot your password?</a></footer>
       </div>
-      <p>Not registered? <a class="toggle" href="#">Sign up</a></p>
     </div>
   </div>
   <!-- Colum-->

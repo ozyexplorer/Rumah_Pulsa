@@ -1,5 +1,5 @@
 <?php  
-	include 'koneksi.php';
+	include 'public/koneksi/koneksi.php';
 
 	$query = mysqli_query($koneksi, 'SELECT * FROM member');
 	$row = mysqli_fetch_array($query);

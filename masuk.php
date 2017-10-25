@@ -1,8 +1,8 @@
 <?php 
-	include 'koneksi.php';
+	include 'public/koneksi/koneksi.php';
 	
-	$username = 37180;
-	$password = 12345678;
+	$username = $_POST['user_member'];
+	$password = $_POST['password_member'];
 
 
 	$query = mysqli_query($koneksi, "SELECT * FROM member WHERE user_member='$username' AND password_member='$password'");
@@ -12,7 +12,7 @@
 ?>
 
 	<?php  
-		require_once 'ceksaldo.php';
+		require_once 'public/cek_saldo/ceksaldo.php';
 		echo "<br>"; 
-		require_once 'daftar_harga.php';
+		require_once 'public/daftar_harga/daftar_harga.php';
 	?>

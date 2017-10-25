@@ -2,16 +2,13 @@
 <html>
 <head>
 	<title>Masuk sistem</title>
+	<link rel="stylesheet" type="text/css" href="public/login_member/style.css">
+	<script type="text/javascript" src="public/login_member/script.js"></script>
 </head>
 <body>
-	<h1>LOGIN SISTEM</h1>
-	<form action="masuk.php" method="post">
-		<input type="text" name="user_member" placeholder="masukan user anda"><br>
-		<input type="password" name="password_member" placeholder="masukan password anda"><br>
-
-		<br><br>
-		<input type="submit" name="login" value="LOGIN"s>
-	</form>
-
+	
+	<?php 
+		require_once "public/login_member/login.php";
+	?>
 </body>
 </html>
