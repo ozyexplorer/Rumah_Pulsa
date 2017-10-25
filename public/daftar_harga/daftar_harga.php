@@ -3,7 +3,6 @@
 
 	$query = mysqli_query($koneksi, 'SELECT * FROM member');
 	$row = mysqli_fetch_array($query);
-	$username = '37180';
 	$id=$username; //ID Member hanya angka
 	$key=$row['key_api']; //KEY 
 	$api=$row['secret_api']; //API

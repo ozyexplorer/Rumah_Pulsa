@@ -24,19 +24,23 @@
 	<nav>
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Transaksi</a></li>
+			<li><a href="#">Transaksi</a>
+				<ul>
+					<li><a href="#">Pulsa</a></li>
+					<li><a href="#">Token PLN</a></li>
+					<li><a href="#">Paket Data</a></li>
+					<li><a href="#">Voucher Game</a></li>
+				</ul>
+			</li>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">Saldo anda : <?php echo $data ?></a></li>
+			<li><a href="#">Logout</a></li>
 		</ul>
 	</nav>
 
-	<?php
-		
+	<?php	
 		require_once 'public/daftar_harga/daftar_harga.php';		
 	?>
-
-	
-
 </body>
 </html>
 	

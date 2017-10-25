@@ -3,20 +3,14 @@
 <head>
 	<title>Masuk sistem</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body {
+			background-color: #ede7f6;
+		}
+	</style>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<!-- <h1>LOGIN SISTEM</h1>
-	<form action="masuk.php" method="post">
-		<input type="text" name="user_member" placeholder="masukan user anda"><br>
-		<input type="password" name="password_member" placeholder="masukan password anda"><br>
-
-		<br><br>
-		<input type="submit" name="login" value="LOGIN"s>
-	</form> -->
-	
-
-<!-- Pen Title-->
 <div class="pen-title">
   <h1>
      <span>Transaksi</span>RUMAH PULSA</h1><span> <i class='fa fa-paint-brush'></i> + <i class='fa fa-code'></i> by <a href='#'>Barrur Rhozi</a></span>
