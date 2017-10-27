@@ -15,9 +15,7 @@
   <h1>
      <span>Transaksi</span>RUMAH PULSA</h1><span> <i class='fa fa-paint-brush'></i> + <i class='fa fa-code'></i> by <a href='#'>Barrur Rhozi</a></span>
 </div>
-<!-- Portfolio--><a id="portfolio" href="#" title="View my portfolio!"><i class="fa fa-link"></i></a>
-<!-- CodePen--><a id="codepen" href="#" title="Follow me!"><i class="fa fa-codepen"></i></a>
-<!-- Container-->
+
 <div class="container">
   <!-- Column-->
   <div class="col">
@@ -47,6 +45,7 @@
         <header class="header">
           <h1 class="active">LOGIN</h1>
         </header>
+        <br>
         <form class="active" action="masuk.php" method="post">
           <div class="form-group">
             <input type="text" id="user_member" name="user_member" placeholder="Username" required="required"/>
@@ -58,6 +57,7 @@
             <label for="password">Password</label>
             <div class="line"></div>
           </div>
+          <br>
           <button class="button" name="login">Login</button>
         </form>
         <footer class="footer"><a href="#">Forgot your password?</a></footer>
@@ -104,7 +104,12 @@
             <label for="password">Password</label>
             <div class="line"></div>
           </div>
-          <button class="button">Login</button>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required="required"/>
+            <label for="email">Email Address</label>
+            <div class="line"></div>
+          </div>
+          <button class="button">Sign Up</button>
         </form>
         <form>
           <div class="form-group">

@@ -1,9 +1,8 @@
 <?php  
 	include 'public/koneksi/koneksi.php';
-
-	$query = mysqli_query($koneksi, 'SELECT * FROM member');
+	$query = mysqli_query($koneksi, "SELECT * FROM member");
 	$row = mysqli_fetch_array($query);
-	$id=0; //ID Member hanya angka
+	$id=37180; //ID Member hanya angka
 	$key=$row['key_api']; //KEY 
 	$api=$row['secret_api']; //API
 	$url = "https://xp.sindonesia.net/api/daftar_harga.php";
