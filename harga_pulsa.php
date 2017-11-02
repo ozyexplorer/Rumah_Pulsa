@@ -37,13 +37,26 @@
 	$json = file_get_contents($link);
 	$a = json_decode($json);
 
-	foreach ($a as $r) {
+	/*foreach ($a as $r) {
 		echo $r->nama. " Harga : " . $r->harga;
+		echo "<br>";
+	}*/
+
+/*
+	print_r($a);
+	*/
+	for ($i=0; $i < 69 ; $i++) { 
+		echo $a[$i]->nama . " = " . $a[$i]->harga;
 		echo "<br>";
 	}
 
+	echo "<br>";
+
+
+	
+
+
 	
  ?>
- <input type="text" name="xl">XL
 </body>
 </html>
