@@ -27,7 +27,7 @@
 		</ul>
 	</nav>
 	<header>
-		<h1>DAFTAR HARGA PULSA</h1>
+		<h1 class="judul">DAFTAR HARGA PULSA</h1>
 	</header>
 
 
