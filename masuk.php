@@ -35,8 +35,8 @@
 			<li><a href="#">Daftar Harga</a>
 				<ul>
 					<li><a href="harga_pulsa.php">Pulsa</a></li>
-					<li><a href="#">Token PLN</a></li>
-					<li><a href="#">Paket Data</a></li>
+					<li><a href="harga_token.php">Token PLN</a></li>
+					<li><a href="harga_data.php">Paket Data</a></li>
 					<li><a href="#">Voucher Game</a></li>
 				</ul>
 			</li>
