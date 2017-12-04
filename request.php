@@ -7,6 +7,8 @@
 
 	$query = mysqli_query($koneksi, "SELECT * FROM member WHERE user_member='$username' AND password_member='$password'");
 	$cek = mysqli_num_rows($query);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +45,12 @@
 		</ul>
 	</nav>
 
+	<section>
+		<article>
+			<h1>Request Deposit</h1>
+			
+		</article>
+	</section>
 </body>
 </html>
 	
