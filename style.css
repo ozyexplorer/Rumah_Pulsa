@@ -84,3 +84,14 @@ nav ul ul ul{
  left: 100%;
  top: 0;
 }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  background: rgba(4, 40, 68, 0.85);
+}

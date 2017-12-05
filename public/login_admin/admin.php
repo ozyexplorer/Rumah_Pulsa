@@ -1,48 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hallo Admin</title>
-	<link rel="stylesheet" type="text/css" href="styleform.css">
-	<script type="text/javascript" src="animasi.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styleform.css">
+  <script type="text/javascript" src="animasi.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- multistep form -->
-<form id="msform">
-  <!-- progressbar -->
-  <ul id="progressbar">
-    <li class="active">Account Setup</li>
-    <li>Social Profiles</li>
-    <li>Personal Details</li>
-  </ul>
-  <!-- fieldsets -->
-  <fieldset>
-    <h2 class="fs-title">Create your account</h2>
-    <h3 class="fs-subtitle">This is step 1</h3>
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="pass" placeholder="Password" />
-    <input type="password" name="cpass" placeholder="Confirm Password" />
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Social Profiles</h2>
-    <h3 class="fs-subtitle">Your presence on the social network</h3>
-    <input type="text" name="twitter" placeholder="Twitter" />
-    <input type="text" name="facebook" placeholder="Facebook" />
-    <input type="text" name="gplus" placeholder="Google Plus" />
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Personal Details</h2>
-    <h3 class="fs-subtitle">We will never sell it</h3>
-    <input type="text" name="fname" placeholder="First Name" />
-    <input type="text" name="lname" placeholder="Last Name" />
-    <input type="text" name="phone" placeholder="Phone" />
-    <textarea name="address" placeholder="Address"></textarea>
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-  </fieldset>
-</form>
+  <div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+                <img src="http://placehold.it/200x50&text=LOGO" alt="LOGO"">
+            </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+            </li>            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin User <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-1" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  MENU 2 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-2" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>  MENU 3</a>
+                </li>
+                <li>
+                    <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
+                </li>
+                <li>
+                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row" id="main" >
+                <div class="col-sm-12 col-md-12 well" id="content">
+                    <h1>Welcome Admin!</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
 </body>
 </html>

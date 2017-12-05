@@ -3,12 +3,20 @@
 <head>
 	<title>Masuk sistem</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script.js">
+    
+  </script>
 </head>
 <body>
 
+  <h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hai, Selamat Datang", "di Rumah Pulsa", "Develop by Rhozi." ]'>
+    <span class="wrap"></span>
+  </a>
+  </h1>
+
   <div class="wrapper">
-  <form class="login" action="masuk.php" method="post">
+  <form class="login" action="member/dashboard.html" method="post">
     <p class="title">Member Area</p>
     <input type="text" placeholder="Username" name="user_member" autofocus/>
     <i class="fa fa-user"></i>
